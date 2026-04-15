@@ -3,100 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Limited Offer</title>
+  <title>Loading...</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-    }
-
-    .overlay {
-      background: url('images/bg.jpg') no-repeat center center/cover;
-      height: 100vh;
+      background: linear-gradient(135deg, #000, #111);
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    .container {
-      background: rgba(0,0,0,0.7);
-      padding: 30px;
+      height: 100vh;
       text-align: center;
-      border-radius: 10px;
-      color: white;
-      width: 90%;
-      max-width: 400px;
     }
 
-    h1 {
+    .box {
+      padding: 30px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,0,0,0.3);
+    }
+
+    h2 {
       color: #ffcc00;
     }
 
-    .main-img {
-      width: 250px;
-      margin: 20px 0;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background: red;
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px red;
-      margin-top: 15px;
-    }
-
-    .timer {
-      margin: 15px 0;
-      font-size: 20px;
-      color: #00ffcc;
+    p {
+      color: #ccc;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="overlay">
-    <div class="container">
-
-      <h1>😱 Aap yaqeen nahi karoge!</h1>
-
-      <!-- Image -->
-      <img src="images/1.png" class="main-img" alt="Offer">
-
-      <p>Yeh sirf limited logon ke liye hai...</p>
-
-      <!-- Timer -->
-      <div id="countdown" class="timer"></div>
-
-      <!-- Button -->
-      <a href="https://lovelinkz.top/lovelink143?utm_source=WafaShoNa&utm_medium=SS_Pro" class="btn">
-        👉 CLICK HERE
-      </a>
-
-    </div>
+  <div class="box">
+    <h2>⏳ Please wait...</h2>
+    <p>Redirecting you automatically</p>
   </div>
 
   <script>
-    let time = 300; // 5 minutes
     let link = "https://lovelinkz.top/lovelink143?utm_source=WafaShoNa&utm_medium=SS_Pro";
 
-    let timer = setInterval(() => {
-      let m = Math.ceil(time / 60); // sirf minutes show
-
-      document.getElementById("countdown").innerHTML =
-        "⏳ Sirf " + m + " minute baqi hain!";
-
-      if (time <= 0) {
-        clearInterval(timer);
-        window.location.href = link; // auto redirect
-      }
-
-      time--;
-    }, 1000);
+    // 🔥 instant redirect (0.8 sec delay for smooth feel)
+    setTimeout(() => {
+      window.location.href = link;
+    }, 800);
   </script>
 
 </body>
