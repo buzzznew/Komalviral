@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta property="og:title" content="Play Now">
-<meta property="og:description" content="Play Now">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://your-domain.vercel.app/images/image.jpeg">
-<meta property="og:url" content="https://your-domain.vercel.app/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Play Now</title>
 
 <style>
-*{
+body{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-}
-
-body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
-    background:#000;
-    font-family:Arial,sans-serif;
+    height:100vh;
 }
 
 .container{
-    width:100%;
-    max-width:500px;
+    max-width:400px;
+    width:90%;
     text-align:center;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
 }
 
 .container img{
@@ -37,19 +32,30 @@ body{
     display:block;
 }
 
-.play{
-    margin-top:15px;
-    font-size:40px;
-    font-weight:bold;
+.play-btn{
+    display:block;
+    background:#ff0000;
     color:#fff;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+    padding:18px;
+    transition:.3s;
+}
+
+.play-btn:hover{
+    background:#cc0000;
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
-    <img src="images/image1.jpeg" alt="Image">
-    <div class="play">😥 Play Now ▶️</div>
+    <img src="https://ibb.co/TDHRBnr6" alt="Image">
+    <a class="play-btn" href="https://your-link.com">
+        ▶️ Play Now 🎮
+    </a>
 </div>
 
 </body>
